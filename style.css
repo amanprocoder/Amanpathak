@@ -12,7 +12,7 @@
     border: none;
 }
 
-.bg a {
+#navbar ul li a {
     text-decoration: none;
     margin-top: 10px;
     color: white;
@@ -20,7 +20,7 @@
     z-index: 1;
 }
 
-.bg a:hover {
+#navbar ul li a:hover {
     padding: 10px;
     background-color: transparent;
     border-radius: 10px;
