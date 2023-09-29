@@ -108,7 +108,6 @@
     color: white;
 }
 
-/* Add a media query for screens smaller than 768px (typical mobile devices) */
 @media (max-width: 768px) {
     #first {
         height: 200px;
