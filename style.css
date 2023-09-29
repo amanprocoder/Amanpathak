@@ -1,70 +1,90 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 .bg {
+    width: 100%;
     background-color: rgba(2, 0, 0, 0.2);
     position: fixed;
-    width: 100%;
-    z-index: 1;
-    top: 0;
-}
-
-.navbar-nav.icon a {
     color: white;
-    margin-left: 70px;
-    text-decoration: none;
 }
 
-.navbar-nav.icon a:hover {
+.icon a {
+    text-decoration: none;
+    margin-top: 10px;
+    color: white;
+    margin-left: 20px;
+    z-index: 1;
+}
+
+.icon a:hover {
+    padding: 10px;
     background-color: transparent;
     border-radius: 10px;
     box-shadow: 2px 2px 2px 2px white;
-    padding-left: 10px;
-    padding-right: 10px;
 }
 
 #first {
     background-image: url('c.jpg');
     background-size: cover;
-    height: 600px;
-    position: relative;
-    top: 50px;
+    height: 300px;
     width: 100%;
+    position: absolute;
+    top: 0;
     z-index: -1;
 }
 
 #box {
-    background-color: rgba(2, 0, 0, 0.1);
-    height: 30%;
-    left: 10%;
     position: relative;
-    top: 35%;
-    width: 80%;
+    top: 50%;
+    left: 5%;
+    background-color: rgba(2, 0, 0, 0.1);
+    width: 90%;
+    color: white;
+    height: 30%;
 }
 
 #textbg h2 {
-    color: white;
     position: relative;
     top: 22px;
+    color: white;
+}
+
+#box h2 {
+    z-index: 1;
+    font-size: 30px;
 }
 
 #texta {
-    padding-left: 150px;
+    padding-left: 20px;
 }
 
 .text {
+    font-size: 30px;
+    padding-left: 10px;
     color: white;
-    font-size: 50px;
-    padding-left: 40px;
     padding-top: 1%;
 }
 
+@keyframes fillText {
+    0% {
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+        clip-path: inset(0 100% 0 0);
+    }
+    100% {
+        background-clip: text;
+        -webkit-text-fill-color: white;
+        clip-path: inset(0 0 0 0);
+    }
+}
+
 .text span {
+    font-weight: bold;
     -webkit-text-stroke: 2px transparent;
     animation: fillText 2s linear infinite;
-    font-weight: bold;
 }
 
 .animated-text span:nth-child(2) {
@@ -105,25 +125,21 @@
 
 #second {
     background-color: darkslategray;
-    height: 600px;
     position: relative;
-    top: 50px;
+    top: 600px;
+    height: 600px;
     width: 100%;
     z-index: -1;
 }
 
 #stext {
-    color: transparent;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    font-size: 40px;
-    -webkit-text-stroke: 2px white;
-    width: 600px;
+    width: 100%;
     padding-top: 30px;
-}
-
-#stext p {
-    animation: moveCharacter 5s linear infinite;
-    width: 77%;
+    color: transparent;
+    font-size: 40px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke: 2px;
+    -webkit-text-stroke-color: white;
 }
 
 @keyframes moveCharacter {
@@ -131,39 +147,44 @@
         transform: translateX(0);
     }
     50% {
-        transform: translateX(780px);
+        transform: translateX(50%);
     }
     100% {
         transform: translateX(0);
     }
 }
 
+#stext p {
+    width: 77%;
+    animation: moveCharacter 5s linear infinite;
+}
+
 #image {
-    height: 750px;
-    width: 1250px;
+    width: 100%;
+    height: auto;
 }
 
 .carousel-inner img {
-    height: 450px;
-    width: 350px;
+    width: 100%;
+    height: auto;
 }
 
 #third {
+    z-index: -1;
     background-image: url('b.jpg');
     background-size: cover;
+    position: absolute;
+    top: 1200px;
     height: 600px;
-    position: relative;
-    top: 50px;
     width: 100%;
-    z-index: -1;
 }
 
 #maindetail {
-    color: white;
-    left: 5%;
     position: relative;
     top: 10%;
-    width: 600px;
+    left: 5%;
+    color: white;
+    width: 90%;
 }
 
 #maindetail p {
@@ -171,68 +192,70 @@
 }
 
 #hobby {
-    color: white;
-    left: 5%;
     position: relative;
     top: 20%;
-    width: 600px;
+    left: 5%;
+    width: 90%;
+    color: white;
 }
 
 #imagea {
-    height: 20%;
-    left: 47%;
     position: absolute;
     top: 18%;
-    width: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 60%;
+    height: auto;
 }
 
 #imga img {
-    height: 60%;
-    width: 60%;
+    width: 100%;
+    height: auto;
 }
 
 #forth {
     background-color: black;
-    height: 300px;
     position: absolute;
-    top: 50px;
+    top: 1800px;
+    height: 300px;
     width: 100%;
     z-index: -1;
 }
 
 #contect {
-    color: white;
     padding-top: 10px;
+    color: white;
 }
 
 #contect h1 {
     font-size: 40px;
-    padding-left: 480px;
+    text-align: center;
 }
 
 #contect p {
-    padding-left: 490px;
+    text-align: center;
     padding-top: 5px;
 }
 
 #aaa {
-    margin-left: 500px;
+    text-align: center;
 }
 
 #aaa a {
-    padding-left: 20px;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 #foot {
     background-color: gray;
-    height: 50px;
     position: absolute;
-    top: 50px;
+    top: 2100px;
     width: 100%;
+    height: 50px;
 }
 
 #foot p {
-    color: white;
-    padding-left: 500px;
+    text-align: center;
     padding-top: 14px;
+    color: white;
 }
