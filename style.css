@@ -9,9 +9,10 @@
     background-color: rgba(2, 0, 0, 0.2);
     position: fixed;
     color: white;
+    border: none;
 }
 
-.icon a {
+.bg a {
     text-decoration: none;
     margin-top: 10px;
     color: white;
@@ -19,7 +20,7 @@
     z-index: 1;
 }
 
-.icon a:hover {
+.bg a:hover {
     padding: 10px;
     background-color: transparent;
     border-radius: 10px;
